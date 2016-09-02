@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5c-lP-n8D">
+                                <rect key="frame" x="0.0" y="54" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2aP-sr-lN0"/>
+                                </constraints>
+                                <state key="normal" title="Page1"/>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nWo-hT-XwP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSO-vf-19A">
+                                <rect key="frame" x="150" y="54" width="150" height="30"/>
+                                <state key="normal" title="Page2"/>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W74-Eh-fX9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CVV-75-vxA">
+                                <rect key="frame" x="300" y="54" width="150" height="30"/>
+                                <state key="normal" title="Page3"/>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g9Q-DL-fA2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dS2-up-EvP">
+                                <rect key="frame" x="450" y="54" width="150" height="30"/>
+                                <state key="normal" title="Page4"/>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vDn-bg-wkz"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="8R9-RP-wUS">
+                                <rect key="frame" x="20" y="174" width="560" height="251"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="251" id="pyQ-Oa-oJ1"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CVV-75-vxA" firstAttribute="leading" secondItem="VSO-vf-19A" secondAttribute="trailing" id="0IB-Nb-44c"/>
+                            <constraint firstItem="VSO-vf-19A" firstAttribute="leading" secondItem="S5c-lP-n8D" secondAttribute="trailing" id="AE6-Cq-ZQz"/>
+                            <constraint firstItem="8R9-RP-wUS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="HhH-UY-NfS"/>
+                            <constraint firstItem="dS2-up-EvP" firstAttribute="width" secondItem="S5c-lP-n8D" secondAttribute="width" id="Iqv-8U-1KW"/>
+                            <constraint firstItem="S5c-lP-n8D" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="34" id="Pno-v4-vAS"/>
+                            <constraint firstItem="VSO-vf-19A" firstAttribute="height" secondItem="S5c-lP-n8D" secondAttribute="height" id="Q0l-f6-6et"/>
+                            <constraint firstAttribute="trailing" secondItem="8R9-RP-wUS" secondAttribute="trailing" constant="20" id="QyR-20-Xlc"/>
+                            <constraint firstItem="S5c-lP-n8D" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TAc-gO-bAR"/>
+                            <constraint firstItem="VSO-vf-19A" firstAttribute="width" secondItem="S5c-lP-n8D" secondAttribute="width" id="ZM6-IT-4S2"/>
+                            <constraint firstItem="VSO-vf-19A" firstAttribute="top" secondItem="S5c-lP-n8D" secondAttribute="top" id="bMJ-4h-zbA"/>
+                            <constraint firstAttribute="trailing" secondItem="dS2-up-EvP" secondAttribute="trailing" id="chW-hf-2a8"/>
+                            <constraint firstItem="CVV-75-vxA" firstAttribute="width" secondItem="S5c-lP-n8D" secondAttribute="width" id="mj6-xg-fcy"/>
+                            <constraint firstItem="CVV-75-vxA" firstAttribute="top" secondItem="S5c-lP-n8D" secondAttribute="top" id="pVd-Ww-SbC"/>
+                            <constraint firstItem="dS2-up-EvP" firstAttribute="leading" secondItem="CVV-75-vxA" secondAttribute="trailing" id="sw8-lL-oiK"/>
+                            <constraint firstItem="8R9-RP-wUS" firstAttribute="top" secondItem="dS2-up-EvP" secondAttribute="bottom" constant="90" id="tSa-AE-G1F"/>
+                            <constraint firstItem="CVV-75-vxA" firstAttribute="height" secondItem="S5c-lP-n8D" secondAttribute="height" id="vQG-a7-4pL"/>
+                            <constraint firstItem="dS2-up-EvP" firstAttribute="height" secondItem="S5c-lP-n8D" secondAttribute="height" id="vj6-m9-0Q2"/>
+                            <constraint firstItem="dS2-up-EvP" firstAttribute="top" secondItem="S5c-lP-n8D" secondAttribute="top" id="wA0-IP-ND5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="8R9-RP-wUS" id="PG4-XF-L3B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="373" y="339"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="0" width="1024" height="640"/>
+    </resources>
+</document>
